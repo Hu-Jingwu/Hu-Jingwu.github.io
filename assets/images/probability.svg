@@ -1,0 +1,13 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="6" y="6" width="84" height="84" rx="18" fill="#0F1012" stroke="#FFC94A" stroke-width="2"/>
+
+  <!-- 骰子 -->
+  <rect x="20" y="30" width="30" height="30" rx="6" stroke="#FFC94A" stroke-width="2"/>
+  <circle cx="30" cy="40" r="2.3" fill="#FFC94A"/>
+  <circle cx="40" cy="50" r="2.3" fill="#FFC94A"/>
+
+  <!-- % -->
+  <circle cx="62" cy="38" r="4" stroke="#FFC94A" stroke-width="2"/>
+  <circle cx="72" cy="58" r="4" stroke="#FFC94A" stroke-width="2"/>
+  <line x1="58" y1="62" x2="76" y2="34" stroke="#FFC94A" stroke-width="2" stroke-linecap="round"/>
+</svg>
