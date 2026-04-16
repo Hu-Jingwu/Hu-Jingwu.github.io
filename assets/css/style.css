@@ -2280,39 +2280,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   margin-bottom: 12px;
 }
 
-.hero-text,
 .research-intro,
 .contact-copy,
 .contact-note p {
   color: var(--light-gray);
   font-size: var(--fs-6);
   line-height: 1.7;
-}
-
-.hero-stats {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.stat-card {
-  padding: 18px 16px;
-  background: hsla(0, 0%, 100%, 0.03);
-  border: 1px solid hsla(45, 100%, 72%, 0.12);
-  border-radius: 16px;
-  text-align: center;
-}
-
-.stat-card strong {
-  color: var(--white-2);
-  font-size: 1.7rem;
-  line-height: 1;
-}
-
-.stat-card span {
-  color: var(--light-gray);
-  font-size: var(--fs-7);
-  margin-top: 6px;
 }
 
 .research-intro {
@@ -2400,8 +2373,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 @media (max-width: 579px) {
-  .timeline-head,
-  .hero-stats {
+  .timeline-head {
     grid-template-columns: 1fr;
   }
 
