@@ -96,6 +96,9 @@
             <button class="navbar-link" data-nav-link>Research</button>
           </li>
           <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Photography</button>
+          </li>
+          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
         </ul>
@@ -502,6 +505,122 @@
             </li>
           </ol>
         </section>
+      </article>
+
+      <article class="photography" data-page="photography">
+        <header>
+          <h2 class="h2 article-title">Photography</h2>
+        </header>
+
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+            <li class="blog-post-item">
+              <button
+                class="photo-card"
+                type="button"
+                data-photo-item
+                data-photo-group="wugong"
+                data-photo-index="0"
+                data-photo-src="./inPhoto/%E6%AD%A6%E5%8A%9F%E5%B1%B11.jpg"
+                data-photo-title="武功山1"
+                data-photo-time="February 1st, 2025"
+                data-photo-place="Pingxiang, Wugong Mountain, China"
+              >
+                <figure class="blog-banner-box">
+                  <img src="./inPhoto/%E6%AD%A6%E5%8A%9F%E5%B1%B11.jpg" alt="武功山1, Pingxiang, Wugong Mountain, China" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Photography</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-02-01">February 1st, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">武功山</h3>
+
+                  <p class="blog-text">
+                    Place: Pingxiang, Wugong Mountain, China
+                  </p>
+                </div>
+              </button>
+            </li>
+
+            <li class="blog-post-item">
+              <button
+                class="photo-card"
+                type="button"
+                data-photo-item
+                data-photo-group="dayanding"
+                data-photo-index="0"
+                data-photo-src="./inPhoto/%E5%A4%A7%E9%9B%81%E9%A1%B6.jpg"
+                data-photo-title="大雁顶"
+                data-photo-time="November 18, 2025"
+                data-photo-place="Shenzhen, China"
+              >
+                <figure class="blog-banner-box">
+                  <img src="./inPhoto/%E5%A4%A7%E9%9B%81%E9%A1%B6.jpg" alt="大雁顶, Shenzhen, China" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Photography</p>
+                    <span class="dot"></span>
+                    <time datetime="2025-11-18">November 18, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">大雁顶</h3>
+
+                  <p class="blog-text">
+                    Place: Shenzhen, China
+                  </p>
+                </div>
+              </button>
+            </li>
+          </ul>
+        </section>
+
+        <div class="photo-gallery-data" hidden>
+          <button type="button" data-photo-item data-photo-group="wugong" data-photo-index="1" data-photo-src="./inPhoto/%E6%AD%A6%E5%8A%9F%E5%B1%B12.jpg" data-photo-title="武功山2" data-photo-time="February 1st, 2025" data-photo-place="Pingxiang, Wugong Mountain, China"></button>
+          <button type="button" data-photo-item data-photo-group="wugong" data-photo-index="2" data-photo-src="./inPhoto/%E6%AD%A6%E5%8A%9F%E5%B1%B13.jpg" data-photo-title="武功山3" data-photo-time="February 1st, 2025" data-photo-place="Pingxiang, Wugong Mountain, China"></button>
+          <button type="button" data-photo-item data-photo-group="wugong" data-photo-index="3" data-photo-src="./inPhoto/%E6%AD%A6%E5%8A%9F%E5%B1%B14.jpg" data-photo-title="武功山4" data-photo-time="February 1st, 2025" data-photo-place="Pingxiang, Wugong Mountain, China"></button>
+          <button type="button" data-photo-item data-photo-group="wugong" data-photo-index="4" data-photo-src="./inPhoto/%E6%AD%A6%E5%8A%9F%E5%B1%B15.jpg" data-photo-title="武功山5" data-photo-time="February 1st, 2025" data-photo-place="Pingxiang, Wugong Mountain, China"></button>
+        </div>
+
+        <div class="photo-modal-container" data-photo-modal-container>
+          <div class="overlay" data-photo-overlay></div>
+
+          <section class="photo-modal">
+            <button class="modal-close-btn" type="button" data-photo-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <button class="photo-nav-btn photo-nav-prev" type="button" data-photo-prev aria-label="Previous photo">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </button>
+
+            <div class="photo-stage">
+              <img src="" alt="" class="photo-modal-image" data-photo-modal-image>
+            </div>
+
+            <button class="photo-nav-btn photo-nav-next" type="button" data-photo-next aria-label="Next photo">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+
+            <div class="photo-modal-content">
+              <div class="photo-modal-meta">
+                <h3 class="h3" data-photo-modal-title></h3>
+                <div class="photo-modal-actions">
+                  <p class="photo-modal-counter" data-photo-modal-counter></p>
+                  <button class="photo-zoom-btn" type="button" data-photo-zoom-btn>Zoom</button>
+                </div>
+              </div>
+              <p class="photo-modal-text" data-photo-modal-time></p>
+              <p class="photo-modal-text" data-photo-modal-place></p>
+              <div class="photo-thumbs" data-photo-thumbs></div>
+            </div>
+          </section>
+        </div>
       </article>
 
       <article class="contact" data-page="contact">
