@@ -34,6 +34,7 @@ const selectItems = document.querySelectorAll('[data-select-item]');
 const filterButtons = document.querySelectorAll('[data-filter-btn]');
 const filterItems = document.querySelectorAll('[data-filter-item]');
 const researchItems = document.querySelectorAll('[data-research-item]');
+const photoItems = Array.from(document.querySelectorAll('[data-photo-item]'));
 
 const filterResearch = (selectedValue) => {
   const normalizedValue = selectedValue.toLowerCase();
@@ -98,6 +99,132 @@ researchItems.forEach((item) => {
     event.preventDefault();
     toggleItem();
   });
+});
+
+const photoModalContainer = document.querySelector('[data-photo-modal-container]');
+const photoOverlay = document.querySelector('[data-photo-overlay]');
+const photoCloseBtn = document.querySelector('[data-photo-close-btn]');
+const photoPrevBtn = document.querySelector('[data-photo-prev]');
+const photoNextBtn = document.querySelector('[data-photo-next]');
+const photoZoomBtn = document.querySelector('[data-photo-zoom-btn]');
+const photoModalImage = document.querySelector('[data-photo-modal-image]');
+const photoModalTitle = document.querySelector('[data-photo-modal-title]');
+const photoModalTime = document.querySelector('[data-photo-modal-time]');
+const photoModalPlace = document.querySelector('[data-photo-modal-place]');
+const photoModalCounter = document.querySelector('[data-photo-modal-counter]');
+const photoThumbs = document.querySelector('[data-photo-thumbs]');
+
+let activePhotoGroup = [];
+let activePhotoIndex = 0;
+
+const renderPhotoModal = () => {
+  if (!activePhotoGroup.length || !photoModalImage) return;
+
+  const currentPhoto = activePhotoGroup[activePhotoIndex];
+  const hasMultiplePhotos = activePhotoGroup.length > 1;
+
+  photoModalImage.src = currentPhoto.dataset.photoSrc;
+  photoModalImage.alt = currentPhoto.dataset.photoTitle;
+  photoModalImage.classList.remove('zoomed');
+
+  if (photoModalTitle) photoModalTitle.textContent = currentPhoto.dataset.photoTitle;
+  if (photoModalTime) photoModalTime.textContent = `Photo time: ${currentPhoto.dataset.photoTime}`;
+  if (photoModalPlace) photoModalPlace.textContent = `Place: ${currentPhoto.dataset.photoPlace}`;
+  if (photoModalCounter) photoModalCounter.textContent = `${activePhotoIndex + 1} / ${activePhotoGroup.length}`;
+  if (photoZoomBtn) photoZoomBtn.textContent = 'Zoom';
+
+  if (photoPrevBtn) photoPrevBtn.classList.toggle('is-hidden', !hasMultiplePhotos);
+  if (photoNextBtn) photoNextBtn.classList.toggle('is-hidden', !hasMultiplePhotos);
+
+  if (photoThumbs) {
+    photoThumbs.innerHTML = '';
+
+    activePhotoGroup.forEach((photoItem, index) => {
+      const thumbButton = document.createElement('button');
+      thumbButton.type = 'button';
+      thumbButton.className = 'photo-thumb';
+      if (index === activePhotoIndex) thumbButton.classList.add('active');
+      thumbButton.setAttribute('aria-label', `Open ${photoItem.dataset.photoTitle}`);
+
+      const thumbImage = document.createElement('img');
+      thumbImage.src = photoItem.dataset.photoSrc;
+      thumbImage.alt = photoItem.dataset.photoTitle;
+
+      thumbButton.appendChild(thumbImage);
+      thumbButton.addEventListener('click', () => {
+        activePhotoIndex = index;
+        renderPhotoModal();
+      });
+
+      photoThumbs.appendChild(thumbButton);
+    });
+  }
+};
+
+const openPhotoModal = (clickedItem) => {
+  const groupName = clickedItem.dataset.photoGroup;
+  activePhotoGroup = photoItems.filter((item) => item.dataset.photoGroup === groupName);
+  activePhotoIndex = activePhotoGroup.findIndex((item) => item === clickedItem);
+
+  renderPhotoModal();
+  if (photoModalContainer && photoOverlay) {
+    photoModalContainer.classList.add('active');
+    photoOverlay.classList.add('active');
+  }
+};
+
+const closePhotoModal = () => {
+  if (photoModalContainer && photoOverlay) {
+    photoModalContainer.classList.remove('active');
+    photoOverlay.classList.remove('active');
+  }
+
+  if (photoModalImage) {
+    photoModalImage.classList.remove('zoomed');
+  }
+};
+
+const movePhoto = (direction) => {
+  if (activePhotoGroup.length <= 1) return;
+
+  activePhotoIndex = (activePhotoIndex + direction + activePhotoGroup.length) % activePhotoGroup.length;
+  renderPhotoModal();
+};
+
+photoItems.forEach((item) => {
+  item.addEventListener('click', () => openPhotoModal(item));
+});
+
+if (photoCloseBtn) {
+  photoCloseBtn.addEventListener('click', closePhotoModal);
+}
+
+if (photoPrevBtn) {
+  photoPrevBtn.addEventListener('click', () => movePhoto(-1));
+}
+
+if (photoNextBtn) {
+  photoNextBtn.addEventListener('click', () => movePhoto(1));
+}
+
+if (photoZoomBtn && photoModalImage) {
+  photoZoomBtn.addEventListener('click', () => {
+    const isZoomed = photoModalImage.classList.toggle('zoomed');
+    photoZoomBtn.textContent = isZoomed ? 'Reset' : 'Zoom';
+  });
+
+  photoModalImage.addEventListener('click', () => {
+    const isZoomed = photoModalImage.classList.toggle('zoomed');
+    photoZoomBtn.textContent = isZoomed ? 'Reset' : 'Zoom';
+  });
+}
+
+document.addEventListener('keydown', (event) => {
+  if (!photoModalContainer || !photoModalContainer.classList.contains('active')) return;
+
+  if (event.key === 'Escape') closePhotoModal();
+  if (event.key === 'ArrowLeft') movePhoto(-1);
+  if (event.key === 'ArrowRight') movePhoto(1);
 });
 
 filterResearch('all');
