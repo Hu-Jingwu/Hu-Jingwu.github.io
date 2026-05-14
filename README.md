@@ -1,44 +1,25 @@
-# vCard - Personal portfolio
+# Hu Jingwu Personal Webpage
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+This repository contains my personal academic webpage, built with HTML, CSS, and JavaScript.
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+The site presents my background in mathematics and statistics, including:
 
-## Demo
+- education
+- teaching assistant experience
+- awards and workshops
+- research and course notes
+- contact information
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+## Website
 
-## Prerequisites
+This repository is intended to be published as my GitHub Pages personal website.
 
-Before you begin, ensure you have met the following requirements:
+## Local Preview
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-## Installing vCard
-
-To install **vCard**, follow these steps:
-
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-Windows:
-
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-## Contact
-
-If you want to contact me you can reach me at [Twitter](https://www.x.com/codewithsadee_).
+To view the site locally, open `index.html` in a browser.
 
 ## License
 
-MIT
+This project is released under the MIT License. See [LICENSE](./LICENSE).
+
+The website was originally adapted from an MIT-licensed portfolio template, and this repository keeps the MIT license accordingly.

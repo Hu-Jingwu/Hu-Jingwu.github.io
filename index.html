@@ -1,1201 +1,714 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
-
-  <!--
-    - favicon
-  -->
+  <title>Hu Jingwu | Mathematics Portfolio</title>
+  <meta name="description" content="Academic portfolio of Hu Jingwu, MPhil student in Mathematics at The Chinese University of Hong Kong, Shenzhen.">
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-  <!--
-    - #MAIN
-  -->
-
   <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
     <aside class="sidebar" data-sidebar>
-
       <div class="sidebar-info">
-
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+          <img src="./assets/images/myicon.png" alt="Hu Jingwu portrait" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Richard hanrick</h1>
-
-          <p class="title">Web developer</p>
+          <h1 class="name" title="Hu Jingwu">Hu Jingwu</h1>
+          <p class="title">MPhil Student in Mathematics</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
-
           <ion-icon name="chevron-down"></ion-icon>
         </button>
-
       </div>
 
       <div class="sidebar-info_more">
-
         <div class="separator"></div>
 
         <ul class="contacts-list">
-
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Email</p>
-
-              <a href="mailto:richard@example.com" class="contact-link">richard@example.com</a>
+              <a href="mailto:hujingwu2001@outlook.com" class="contact-link">hujingwu2001@outlook.com</a>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
+              <ion-icon name="school-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+              <p class="contact-title">Affiliation</p>
+              <p class="contact-link">CUHK-Shenzhen</p>
             </div>
-
           </li>
 
           <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">June 23, 1982</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Location</p>
-
-              <address>Sacramento, California, USA</address>
+              <address>Shenzhen, Guangdong, China</address>
             </div>
-
           </li>
-
         </ul>
 
         <div class="separator"></div>
 
         <ul class="social-list">
-
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href="mailto:hujingwu2001@outlook.com" class="social-link" aria-label="Email">
+              <ion-icon name="mail-outline"></ion-icon>
             </a>
           </li>
-
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <a href="https://arxiv.org/abs/2508.05032" class="social-link" target="_blank" rel="noreferrer" aria-label="arXiv">
+              <ion-icon name="document-text-outline"></ion-icon>
             </a>
           </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
         </ul>
-
       </div>
-
     </aside>
 
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
     <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
       <nav class="navbar">
-
         <ul class="navbar-list">
-
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link active" data-nav-link>About</button>
           </li>
-
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Resume</button>
           </li>
-
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>Research</button>
           </li>
-
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link>Photography</button>
           </li>
-
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
-
         </ul>
-
       </nav>
 
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
+      <article class="about active" data-page="about">
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title">About Me</h2>
         </header>
 
         <section class="about-text">
           <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+            I am currently pursuing a Master of Philosophy in Mathematics at The Chinese University of Hong Kong, Shenzhen, under the supervision of Dr. Cheuk Yin Lee. My research centers on stochastic partial differential equations, random fields, and probability theory.
           </p>
-
           <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+            I completed my BS in Mathematics and Applied Mathematics at Xiamen University, and I will join Michigan State University as a PhD student in Statistics in September 2026. This website brings together my education, teaching assistant experience, workshops, research, awards, and academic background.
           </p>
         </section>
 
-
-        <!--
-          - service
-        -->
+        <section class="hero-panel">
+          <div class="hero-copy">
+            <p class="eyebrow">Current Focus</p>
+            <h3 class="hero-title">Probability, Random Fields, and SPDEs</h3>
+          </div>
+        </section>
 
         <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title">Research Interests</h3>
 
           <ul class="service-list">
-
             <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
+                <h4 class="h4 service-item-title">Probability Theory</h4>
+                <p class="service-item-text">Probability theory and random phenomena with emphasis on rigorous analysis.</p>
               </div>
-
             </li>
 
             <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
+                <h4 class="h4 service-item-title">Random Fields</h4>
+                <p class="service-item-text">Random fields and their fine spatio-temporal behavior.</p>
               </div>
-
             </li>
 
             <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
+                <h4 class="h4 service-item-title">Stochastic PDEs</h4>
+                <p class="service-item-text">Stochastic differential equations, stochastic partial differential equations, and applications in statistics.</p>
               </div>
-
             </li>
 
             <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
+                <h4 class="h4 service-item-title">Stochastic Simulation</h4>
+                <p class="service-item-text">Stochastic simulation for interacting particle systems and chemotaxis-type dynamics.</p>
               </div>
-
             </li>
-
           </ul>
-
         </section>
 
+        <section class="course-notes">
+          <h3 class="h3 service-title">Course Notes</h3>
 
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
+          <div class="content-card notes-card">
+            <h4 class="h4 service-item-title">Topics in SPDEs</h4>
+            <p class="service-item-text">
+              A set of course notes related to stochastic partial differential equations.
+            </p>
+            <a
+              href="https://github.com/Hu-Jingwu/Topics-in-SPDEs/blob/main/Topics%20in%20SPDE.pdf"
+              target="_blank"
+              rel="noreferrer"
+              class="notes-link"
+            >
+              Read the notes
+            </a>
+          </div>
         </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
       </article>
 
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
       <article class="resume" data-page="resume">
-
         <header>
           <h2 class="h2 article-title">Resume</h2>
         </header>
 
         <section class="timeline">
-
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="school-outline"></ion-icon>
             </div>
-
             <h3 class="h3">Education</h3>
           </div>
 
           <ol class="timeline-list">
-
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University school of the arts</h4>
-
-              <span>2007 — 2008</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
+              <div class="timeline-main">
+                <div class="timeline-head">
+                  <h4 class="h4 timeline-item-title">Xiamen University</h4>
+                  <span>Sept 2020 - June 2024</span>
+                </div>
+                <p class="timeline-text">BS in Mathematics and Applied Mathematics</p>
+                <p class="timeline-text">Final Year Project: Stochastic Simulation for Chemotaxis Dynamics</p>
+                <p class="timeline-text">Advisor: Dr. Tau Shean Lim</p>
+              </div>
             </li>
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">New york academy of art</h4>
-
-              <span>2006 — 2007</span>
-
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
-
+              <div class="timeline-main">
+                <div class="timeline-head">
+                  <h4 class="h4 timeline-item-title">The Chinese University of Hong Kong, Shenzhen</h4>
+                  <span>Sept 2024 - July 2026</span>
+                </div>
+                <p class="timeline-text">Master of Philosophy in Mathematics</p>
+                <p class="timeline-text">Master Thesis: Spatio-Temporal Increments of Parabolic SPDEs</p>
+                <p class="timeline-text">Advisor: Dr. Cheuk Yin Lee</p>
+              </div>
             </li>
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
-
+              <div class="timeline-main">
+                <div class="timeline-head">
+                  <h4 class="h4 timeline-item-title">Michigan State University</h4>
+                  <span>Upcoming Sept 2026</span>
+                </div>
+                <p class="timeline-text">Doctor of Philosophy in Statistics</p>
+              </div>
             </li>
-
           </ol>
-
         </section>
 
         <section class="timeline">
-
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="easel-outline"></ion-icon>
             </div>
-
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3">Teaching Assistants</h3>
           </div>
 
           <ol class="timeline-list">
-
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
-
+              <div class="timeline-main">
+                <div class="timeline-head">
+                  <h4 class="h4 timeline-item-title">MAT1011 Honors Calculus I</h4>
+                  <span>Fall 2024</span>
+                </div>
+                <p class="timeline-text">CUHK(SZ), Teaching Assistant</p>
+              </div>
             </li>
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
+              <div class="timeline-main">
+                <div class="timeline-head">
+                  <h4 class="h4 timeline-item-title">MAT1012 Honors Calculus II</h4>
+                  <span>Spring 2025</span>
+                </div>
+                <p class="timeline-text">CUHK(SZ), Teaching Assistant</p>
+              </div>
             </li>
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
+              <div class="timeline-main">
+                <div class="timeline-head">
+                  <h4 class="h4 timeline-item-title">MAT1011 Honors Calculus I</h4>
+                  <span>Fall 2025</span>
+                </div>
+                <p class="timeline-text">CUHK(SZ), Leading TA</p>
+              </div>
             </li>
 
+            <li class="timeline-item">
+              <div class="timeline-main">
+                <div class="timeline-head">
+                  <h4 class="h4 timeline-item-title">MAT1012 Honors Calculus II</h4>
+                  <span>Spring 2026</span>
+                </div>
+                <p class="timeline-text">CUHK(SZ), Leading TA</p>
+              </div>
+            </li>
           </ol>
+        </section>
 
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="trophy-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Awards</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <div class="timeline-main">
+                <div class="timeline-head">
+                  <h4 class="h4 timeline-item-title">University Scholarship</h4>
+                  <span>Feb 2022</span>
+                </div>
+                <p class="timeline-text">First Class, Top 3% among peers, XMUM</p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <div class="timeline-main">
+                <div class="timeline-head">
+                  <h4 class="h4 timeline-item-title">University Scholarship</h4>
+                  <span>Sep 2023</span>
+                </div>
+                <p class="timeline-text">First Class, Top 3% among peers, XMUM</p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <div class="timeline-main">
+                <div class="timeline-head">
+                  <h4 class="h4 timeline-item-title">BYD Postgraduate Scholarship</h4>
+                  <span>Dec 2025</span>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="people-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Workshops</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <div class="timeline-main">
+                <div class="timeline-head">
+                  <h4 class="h4 timeline-item-title">Workshop on Partial Differential Equations and Stochastic PDEs in Material Science and Statistical Mechanics</h4>
+                  <span>May 2026</span>
+                </div>
+                <p class="timeline-text">The Chinese University of Hong Kong, Shenzhen, China</p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <div class="timeline-main">
+                <div class="timeline-head">
+                  <h4 class="h4 timeline-item-title">Stochastic PDEs in Fluid Dynamics and Beyond</h4>
+                  <span>May 2026</span>
+                </div>
+                <p class="timeline-text">Nanjing University, China</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Technologies</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <div class="timeline-main">
+                <div class="timeline-head">
+                  <h4 class="h4 timeline-item-title">Programming Languages</h4>
+                  <span>Technical</span>
+                </div>
+                <p class="timeline-text">Python, R, C++, C</p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <div class="timeline-main">
+                <div class="timeline-head">
+                  <h4 class="h4 timeline-item-title">Skills</h4>
+                  <span>Tools</span>
+                </div>
+                <p class="timeline-text">LaTeX, Microsoft Office 365</p>
+              </div>
+            </li>
+          </ol>
         </section>
 
         <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
+          <h3 class="h3 skills-title">Languages</h3>
 
           <ul class="skills-list content-card">
-
             <li class="skills-item">
-
               <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
+                <h5 class="h5">Mandarin</h5>
+                <data value="100">Native</data>
               </div>
-
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
+                <div class="skill-progress-fill" style="width: 100%;"></div>
               </div>
-
             </li>
 
             <li class="skills-item">
-
               <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
+                <h5 class="h5">English</h5>
+                <data value="85">Fluent</data>
               </div>
-
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
+                <div class="skill-progress-fill" style="width: 85%;"></div>
               </div>
-
             </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
           </ul>
-
         </section>
-
       </article>
 
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
+      <article class="research" data-page="research">
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Research</h2>
         </header>
 
         <section class="projects">
+          <p class="research-intro">
+            This page collects my current paper and earlier thesis work. Click any item to expand the abstract.
+          </p>
 
           <ul class="filter-list">
-
             <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
             </li>
-
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Paper</button>
             </li>
-
             <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+              <button data-filter-btn>Thesis</button>
             </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
           </ul>
 
           <div class="filter-select-box">
-
             <button class="filter-select" data-select>
-
               <div class="select-value" data-selecct-value>Select category</div>
-
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
               </div>
-
             </button>
 
             <ul class="select-list">
-
               <li class="select-item">
                 <button data-select-item>All</button>
               </li>
-
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Paper</button>
               </li>
-
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item>Thesis</button>
               </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
             </ul>
-
           </div>
 
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+          <ol class="timeline-list project-list">
+            <li
+              class="timeline-item project-item active"
+              data-filter-item
+              data-research-item
+              data-category="thesis"
+              role="button"
+              tabindex="0"
+            >
+              <div class="timeline-main">
+                <div class="timeline-head">
+                  <h4 class="h4 timeline-item-title">Stochastic Simulation of Chemotaxis</h4>
+                  <span>2024</span>
+                </div>
+                <p class="timeline-text">
+                  Jingwu Hu. Bachelor Degree Final Year Project.
+                </p>
+                <p class="research-expand-hint">Click to view abstract</p>
+                <div class="research-abstract">
+                  <p>
+                    We reviewed the well-posedness of classical mean field McKean-Vlasov equations and propagation of chaos. We then introduced a chemotaxis variation in which particle motion is influenced by the distribution of chemicals rather than directly by other particles. The thesis provided a rigorous proof of existence and uniqueness for mean field solutions of the McKean-Vlasov chemotaxis dynamics and included simulations illustrating segregation behavior.
+                  </p>
+                </div>
+              </div>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+            <li
+              class="timeline-item project-item active"
+              data-filter-item
+              data-research-item
+              data-category="paper"
+              role="button"
+              tabindex="0"
+            >
+              <div class="timeline-main">
+                <div class="timeline-head">
+                  <h4 class="h4 timeline-item-title">On the Spatio-Temporal Increments of Nonlinear Parabolic SPDEs and the Open KPZ Equation</h4>
+                  <span>Aug 2025</span>
+                </div>
+                <p class="timeline-text">
+                  Jingwu Hu, Cheuk Yin Lee. Submitted,
+                  <a href="https://arxiv.org/pdf/2508.05032" target="_blank" rel="noreferrer">arXiv:2508.05032</a>.
+                </p>
+                <p class="research-expand-hint">Click to view abstract</p>
+                <div class="research-abstract">
+                  <p>
+                    We study spatio-temporal increments of solutions to nonlinear parabolic SPDEs on a bounded interval with Dirichlet, Neumann, or Robin boundary conditions. We identify exact local and uniform spatio-temporal moduli of continuity, establish small-ball probability estimates and Chung-type laws of the iterated logarithm, and extend some results to the open KPZ equation on the unit interval with inhomogeneous Neumann boundary conditions.
+                  </p>
+                </div>
+              </div>
             </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
+          </ol>
         </section>
-
       </article>
 
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
+      <article class="photography" data-page="photography">
         <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h2 article-title">Photography</h2>
         </header>
 
         <section class="blog-posts">
-
           <ul class="blog-posts-list">
-
             <li class="blog-post-item">
-              <a href="#">
-
+              <button
+                class="photo-card"
+                type="button"
+                data-photo-item
+                data-photo-group="beibei"
+                data-photo-index="0"
+                data-photo-src="./inPhoto/Beibei1.jpg"
+                data-photo-title="Beibei 1"
+                data-photo-time="May 12th, 2026"
+                data-photo-time-label="In memory of"
+                data-photo-place=""
+                data-photo-note="Beibei passed away on May 12th, 2026. He was my first dog, lovely and cute. I hope he has many more friends in the dog star."
+              >
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./inPhoto/Beibei1.jpg" alt="Beibei" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
-
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
+                    <p class="blog-category">Photography</p>
                     <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2026-05-12">May 12th, 2026</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <h3 class="h3 blog-item-title">Beibei</h3>
 
                   <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                    Beibei passed away on May 12th, 2026. He was my first dog, lovely and cute. I hope he has many more friends in the dog star.
                   </p>
-
                 </div>
-
-              </a>
+              </button>
             </li>
 
             <li class="blog-post-item">
-              <a href="#">
-
+              <button
+                class="photo-card"
+                type="button"
+                data-photo-item
+                data-photo-group="wugong"
+                data-photo-index="0"
+                data-photo-src="./inPhoto/%E6%AD%A6%E5%8A%9F%E5%B1%B11.jpg"
+                data-photo-title="武功山1"
+                data-photo-time="February 1st, 2026"
+                data-photo-place="Pingxiang, Wugong Mountain, China"
+              >
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                  <img src="./inPhoto/%E6%AD%A6%E5%8A%9F%E5%B1%B11.jpg" alt="武功山1, Pingxiang, Wugong Mountain, China" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
-
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
+                    <p class="blog-category">Photography</p>
                     <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2026-02-01">February 1st, 2026</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                  <h3 class="h3 blog-item-title">武功山</h3>
 
                   <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                    Place: Pingxiang, Wugong Mountain, China
                   </p>
-
                 </div>
-
-              </a>
+              </button>
             </li>
 
             <li class="blog-post-item">
-              <a href="#">
-
+              <button
+                class="photo-card"
+                type="button"
+                data-photo-item
+                data-photo-group="dayanding"
+                data-photo-index="0"
+                data-photo-src="./inPhoto/%E5%A4%A7%E9%9B%81%E9%A1%B6.jpg"
+                data-photo-title="大雁顶"
+                data-photo-time="November 18, 2025"
+                data-photo-place="Shenzhen, China"
+              >
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                  <img src="./inPhoto/%E5%A4%A7%E9%9B%81%E9%A1%B6.jpg" alt="大雁顶, Shenzhen, China" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
-
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
+                    <p class="blog-category">Photography</p>
                     <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2025-11-18">November 18, 2025</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+                  <h3 class="h3 blog-item-title">大雁顶</h3>
 
                   <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                    Place: Shenzhen, China
                   </p>
-
                 </div>
-
-              </a>
+              </button>
             </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
           </ul>
-
         </section>
 
+        <div class="photo-gallery-data" hidden>
+          <button type="button" data-photo-item data-photo-group="beibei" data-photo-index="1" data-photo-src="./inPhoto/Beibei2.jpg" data-photo-title="Beibei 2" data-photo-time="May 12th, 2026" data-photo-time-label="In memory of" data-photo-place="" data-photo-note="Beibei passed away on May 12th, 2026. He was my first dog, lovely and cute. I hope he has many more friends in the dog star."></button>
+          <button type="button" data-photo-item data-photo-group="beibei" data-photo-index="2" data-photo-src="./inPhoto/Beibei3.jpg" data-photo-title="Beibei 3" data-photo-time="May 12th, 2026" data-photo-time-label="In memory of" data-photo-place="" data-photo-note="Beibei passed away on May 12th, 2026. He was my first dog, lovely and cute. I hope he has many more friends in the dog star."></button>
+          <button type="button" data-photo-item data-photo-group="beibei" data-photo-index="3" data-photo-src="./inPhoto/Beibei4.jpg" data-photo-title="Beibei 4" data-photo-time="May 12th, 2026" data-photo-time-label="In memory of" data-photo-place="" data-photo-note="Beibei passed away on May 12th, 2026. He was my first dog, lovely and cute. I hope he has many more friends in the dog star."></button>
+          <button type="button" data-photo-item data-photo-group="wugong" data-photo-index="1" data-photo-src="./inPhoto/%E6%AD%A6%E5%8A%9F%E5%B1%B12.jpg" data-photo-title="武功山2" data-photo-time="February 1st, 2026" data-photo-place="Pingxiang, Wugong Mountain, China"></button>
+          <button type="button" data-photo-item data-photo-group="wugong" data-photo-index="2" data-photo-src="./inPhoto/%E6%AD%A6%E5%8A%9F%E5%B1%B13.jpg" data-photo-title="武功山3" data-photo-time="February 1st, 2026" data-photo-place="Pingxiang, Wugong Mountain, China"></button>
+          <button type="button" data-photo-item data-photo-group="wugong" data-photo-index="3" data-photo-src="./inPhoto/%E6%AD%A6%E5%8A%9F%E5%B1%B14.jpg" data-photo-title="武功山4" data-photo-time="February 1st, 2026" data-photo-place="Pingxiang, Wugong Mountain, China"></button>
+          <button type="button" data-photo-item data-photo-group="wugong" data-photo-index="4" data-photo-src="./inPhoto/%E6%AD%A6%E5%8A%9F%E5%B1%B15.jpg" data-photo-title="武功山5" data-photo-time="February 1st, 2026" data-photo-place="Pingxiang, Wugong Mountain, China"></button>
+        </div>
+
+        <div class="photo-modal-container" data-photo-modal-container>
+          <div class="overlay" data-photo-overlay></div>
+
+          <section class="photo-modal">
+            <button class="modal-close-btn" type="button" data-photo-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <button class="photo-nav-btn photo-nav-prev" type="button" data-photo-prev aria-label="Previous photo">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </button>
+
+            <div class="photo-stage">
+              <img src="" alt="" class="photo-modal-image" data-photo-modal-image>
+            </div>
+
+            <button class="photo-nav-btn photo-nav-next" type="button" data-photo-next aria-label="Next photo">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+
+            <div class="photo-modal-content">
+              <div class="photo-modal-meta">
+                <h3 class="h3" data-photo-modal-title></h3>
+                <div class="photo-modal-actions">
+                  <p class="photo-modal-counter" data-photo-modal-counter></p>
+                  <button class="photo-zoom-btn" type="button" data-photo-zoom-btn>Zoom</button>
+                </div>
+              </div>
+              <p class="photo-modal-text" data-photo-modal-time></p>
+              <p class="photo-modal-text" data-photo-modal-place></p>
+              <p class="photo-modal-text" data-photo-modal-note></p>
+              <div class="photo-thumbs" data-photo-thumbs></div>
+            </div>
+          </section>
+        </div>
       </article>
 
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
       <article class="contact" data-page="contact">
-
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+        <section class="contact-panel">
+          <div class="contact-card">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
             </div>
+            <div>
+              <h3 class="h3">Email</h3>
+              <a href="mailto:hujingwu2001@outlook.com" class="contact-inline-link">hujingwu2001@outlook.com</a>
+            </div>
+          </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+          <div class="contact-card">
+            <div class="icon-box">
+              <ion-icon name="document-text-outline"></ion-icon>
+            </div>
+            <div>
+              <h3 class="h3">Research Profile</h3>
+              <a href="https://arxiv.org/abs/2508.05032" target="_blank" rel="noreferrer" class="contact-inline-link">View current preprint</a>
+            </div>
+          </div>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
+          <div class="contact-card">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div>
+              <h3 class="h3">Location</h3>
+              <p class="contact-copy">Shenzhen, Guangdong, China</p>
+            </div>
+          </div>
         </section>
 
+        <section class="contact-note">
+          <p>
+            If you would like to discuss research, teaching, or academic collaboration, feel free to reach out by email.
+          </p>
+        </section>
       </article>
-
     </div>
-
   </main>
 
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
-
 </html>
